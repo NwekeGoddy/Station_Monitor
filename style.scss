@@ -1,0 +1,119 @@
+//FONT USED NATO SANS
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family:Noto Sans, Georgia, Times, 'Times New Roman', serif;
+    font-size: 16px;
+    background-color: #D9D9D9;
+}
+
+nav{
+    height: 100px;
+    width: 100%;
+    padding: 20px 100px;
+    background-color: #fff;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    .nav__title{
+        font-weight: 600;
+        font-size: 30px;
+        line-height: 40px;
+        color: #454545;
+    }
+    .nav__add svg{
+        width: 30px;
+        height: 30px;
+        color:#08BB1A;
+    }
+}
+
+.each__station{
+    display: flex;
+    flex-direction: column;
+    margin: 20px 100px;
+    background-color: #fff;
+    padding: 15px 25px;
+    border-radius: 8px;
+
+    .station__name{
+        font-size: 14px;
+        line-height: 18px;
+        font-weight: 600;
+        color: #454545;
+    }
+
+    .station__info{
+        gap: 150px;
+        align-items: center;
+        margin-top: 10px;
+
+        .station__voltage{
+            .station__voltage__icon{
+                display: flex;
+                align-items: center;
+                svg{
+                    width: 16px;
+                    height: 19px;
+                    fill: #FCC21B;
+                
+                }
+            }
+            .station__voltage__value{
+                p{   
+                    font-weight: 500;
+                    font-size: 30px;
+                    line-height: 35px;
+                    color: #454545;
+                }
+            }
+        }
+
+        .station__inverterbattery{
+            .station__inverterbattery__icon{
+                display: flex;
+                align-items: center;
+                svg{
+                    width: 25px;
+                    height: 17px;
+                    fill: #454545;
+                
+                }
+            }
+            .station__inverterbattery__value{
+                p{   
+                    font-weight: 500;
+                    font-size: 30px;
+                    line-height: 35px;
+                    color: #454545;
+                }
+            }
+        }
+
+        .station__powerind{
+            .station__powerind__icon{
+                display: flex;
+                align-items: center;
+                padding-left: 10px;
+                svg{
+                    width: 22px;
+                    height: 28px;
+                    fill: #FCC21B;
+                }
+            }
+        }
+    }
+}
+
+.flex__row{
+    display: flex;
+    flex-direction: row;
+}
