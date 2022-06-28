@@ -60,9 +60,9 @@ nav .nav__add svg {
 }
 
 .each__station .station__name {
-  font-size: 14px;
+  font-size: 16px;
   line-height: 18px;
-  font-weight: 600;
+  font-weight: 800;
   color: #454545;
 }
 
@@ -126,6 +126,16 @@ nav .nav__add svg {
       -ms-flex-align: center;
           align-items: center;
   padding-left: 10px;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 20px;
+  color: #454545;
+}
+
+.each__station .station__info .station__powerind .station__powerind__icon .green {
+  color: green;
+  display: inline-block;
+  margin-right: 3px;
 }
 
 .each__station .station__info .station__powerind .station__powerind__icon svg {

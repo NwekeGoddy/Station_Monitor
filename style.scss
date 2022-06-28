@@ -45,9 +45,9 @@ nav{
     border-radius: 8px;
 
     .station__name{
-        font-size: 14px;
+        font-size: 16px;
         line-height: 18px;
-        font-weight: 600;
+        font-weight: 800;
         color: #454545;
     }
 
@@ -103,6 +103,15 @@ nav{
                 display: flex;
                 align-items: center;
                 padding-left: 10px;
+                font-weight: 500;
+                font-size: 20px;
+                line-height: 20px;
+                color: #454545;
+                .green{
+                    color: green;
+                    display: inline-block;
+                    margin-right: 3px;
+                }
                 svg{
                     width: 22px;
                     height: 28px;
