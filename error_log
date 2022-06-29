@@ -1,0 +1,5 @@
+[19-Jun-2022 08:43:10 America/New_York] PHP Fatal error:  Uncaught Error: Class 'PHPMailer' not found in /home/velhiywf/public_html/station_monitor/index.php:6
+Stack trace:
+#0 /home/velhiywf/public_html/station_monitor/index.php(42): sendmail('detunj@gmail.co...', 'Hidee', 'Velhect Email T...', '<h5">Velhect Su...', '')
+#1 {main}
+  thrown in /home/velhiywf/public_html/station_monitor/index.php on line 6
