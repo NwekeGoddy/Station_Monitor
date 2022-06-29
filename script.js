@@ -51,5 +51,5 @@ function renderUser(data) {
 window.setInterval(function() {
   // do stuff
   fetchUsers();
-  console.log("repeat");
+  // console.log("repeat");
 }, 1000); 
