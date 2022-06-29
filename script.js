@@ -52,4 +52,4 @@ window.setInterval(function() {
   // do stuff
   fetchUsers();
   // console.log("repeat");
-}, 1000); 
+}, 15000); 
