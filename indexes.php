@@ -48,11 +48,11 @@ function sendmail($to,$nameto,$subject,$htmlmess,$altmess="")  {
 
 }
 
-$to = "nwekechidigodwin460@gmail.com";
-$nameto = "Chidi";
+$to = "detunj@gmail.com";
+$nameto = "Hidee";
 $subject = "Station Monitor API Details";
 $title = "Velhect Support";
-$message = '<p style="font-weight:400;text-align:left;color: #000000;font-size: medium;"><em><em>Hi Chidi,</em></em></p>
+$message = '<p style="font-weight:400;text-align:left;color: #000000;font-size: medium;"><em><em>Hi Laalaa,</em></em></p>
     <p style="font-weight:400;text-align:left;color: #000000;font-size: medium;"><em><em>Please use this link to access the API: <a href="www.velhect.com/station_monitor/api/request.php?sn=testing123&user=5c18a705dd6e85b850675864d79529a7" target="_blank">www.velhect.com/station_monitor/api/request.php?sn=testing123&user=5c18a705dd6e85b850675864d79529a7</a></em></em></p>
     <p style="font-weight:400;text-align:left;color: #000000;font-size: medium;"><em><em>Please replace value for "sn" in the API link with the serial number of the device you want to access its data, the user value will remain the same for now.</em></em></p>
     <p style="font-weight:400;text-align:left;color: #000000;font-size: medium;"><em><em>Sample format: {"ac":0,"dc":0,"down_time":0}. Note that the down_time vlue will be in seconds.</em></em></p>
@@ -63,27 +63,39 @@ $message = '<p style="font-weight:400;text-align:left;color: #000000;font-size: 
     <p style="font-weight:400;text-align:left;color: #000000;font-size: medium;"><em><em>Velhect Support</em></em></p>
     ';
 $htmlmess = "
-        <div
-            
-            style=\"
-            margin: 1px auto;
-            justify-content: center;
-            display: block;
-            background: #a3cece;
-            padding: 5%;
-            border-radius: 10px;
-            color: #777;
-            max-width: 450px;
-            \">
+        <div class='par' style ='background: rgba(250, 75, 20, 0.2);'>
+            <div
+                class='sub-par'
+                style=\"
+                    margin: auto;
+                    display: block;
+                    background: #ffffff;
+                    padding: 5%;
+                    color: #777;
+                    max-width: 1440px;
+                    width: calc(100% - 25%);
+                    background-image: url('./logo/velhect_watermark.png');
+                    background-repeat: no-repeat;
+                    background-position: center;
+                    background-size: contain;
+                    background-origin: content-box;
+                \">
 
 
-        <div style='text-align: center;'><img src='http://velhect.com/station_monitor/velhect_logo.png' alt='Bequest Mututal' width='200' height='73' ></div>
+                <div style='text-align: center;'><img src='./logo/velhect_signature.png' alt='Bequest Mututal' width='100%' ></div>
 
-        <h4 style='color:#111; text-align: center;padding-bottom: 5px;font-size: 20px;margin:1em;'>$title</h4>
-        $message
+                <div style='margin-bottom: calc(10% + 50px)'>
+                    $message
+                </div>
+
+                <div style='position: absolute;bottom: 10%;width: inherit;'>
+                    <p style='font-weight:400;text-align:left;color:#000000;font-size:medium'><em><em>Warm regards,</em></em></p>
+                </div>
+
+            </div>
         </div>
         ";
-     //sendmail($to,$nameto,$subject,$htmlmess,$altmess="");
+     sendmail($to,$nameto,$subject,$htmlmess,$altmess="");
 
 ?>
 
