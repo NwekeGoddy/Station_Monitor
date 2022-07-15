@@ -70,6 +70,7 @@ $htmlmess = "
                     display: block;
                     background: #ffffff;
                     padding: 5% 0;
+                    padding-top: 0;
                     color: #777;
                     max-width: 1074px;
                     width: calc(100% - 25%);
@@ -81,7 +82,9 @@ $htmlmess = "
                 \">
 
 
-                <div style='text-align: center;'><img src='http://velhect.com/station_monitor/velhect_signature.png' alt='Velhect' width='100%' ></div>
+                <div style='text-align: center;box-shadow: 0px 0px 10px 1px rgb(221 122 92) !important;'>
+                    <img src='http://velhect.com/station_monitor/velhect_logo.png' alt='Velhect' width='100%' >
+                </div>
 
                 <div style='padding:5%; margin-bottom: calc(10% + 50px)'>
                     $message
