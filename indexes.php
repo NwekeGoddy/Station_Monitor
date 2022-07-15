@@ -82,8 +82,8 @@ $htmlmess = "
                 \">
 
 
-                <div style='text-align: center;box-shadow: 0px 0px 10px 1px rgb(221 122 92) !important;'>
-                    <img src='http://velhect.com/station_monitor/velhect_logo.png' alt='Velhect' width='100%' >
+                <div style='text-align: center;box-shadow: 0px 0px 10px 1px rgb(221 122 92);'>
+                    <img src='http://velhect.com/station_monitor/velhect_signature.png' alt='Velhect' width='100%' >
                 </div>
 
                 <div style='padding:5%; margin-bottom: calc(10% + 50px)'>
