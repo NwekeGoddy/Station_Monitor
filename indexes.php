@@ -39,8 +39,6 @@ function sendmail($to,$nameto,$subject,$htmlmess,$altmess="")  {
     //$mail->AltBody = 'This is the body in plain text for non-HTML mail clients';
 
     $result = $mail->send();
-    var_dump($result);
-    echo $htmlmess;
       
   } catch (Exception $e) {
       echo "Message could not be sent. Mailer Error: {$mail->ErrorInfo}";
@@ -71,11 +69,11 @@ $htmlmess = "
                     margin: auto;
                     display: block;
                     background: #ffffff;
-                    padding: 5%;
+                    padding: 5% 0;
                     color: #777;
-                    max-width: 1440px;
+                    max-width: 1074px;
                     width: calc(100% - 25%);
-                    background-image: url('./logo/velhect_watermark.png');
+                    background-image: url('https://www.velhect.com/station_monitor/logo/velhect_watermark.png');
                     background-repeat: no-repeat;
                     background-position: center;
                     background-size: contain;
@@ -83,23 +81,20 @@ $htmlmess = "
                 \">
 
 
-                <div style='text-align: center;'><img src='./logo/velhect_signature.png' alt='Bequest Mututal' width='100%' ></div>
+                <div style='text-align: center;'><img src='https://www.velhect.com/station_monitor/logo/velhect_signature.png' alt='Velhect' width='100%' ></div>
 
-                <div style='margin-bottom: calc(10% + 50px)'>
+                <div style='padding:5%; margin-bottom: calc(10% + 50px)'>
                     $message
                 </div>
 
-                <div style='position: absolute;bottom: 10%;width: inherit;'>
-                    <p style='font-weight:400;text-align:left;color:#000000;font-size:medium'><em><em>Warm regards,</em></em></p>
+                <div style='padding:0 5%;position: absolute;bottom: 10%;width: inherit;'>
+                    <hr>
+                    <p style='font-weight:400;text-align:left;color:#000000;font-size:medium'><em><em>Footer </em></em></p>
                 </div>
 
             </div>
         </div>
         ";
-    var_dump($to);
-    var_dump($subject);
-    echo $message;
-    echo $htmlmess;
      sendmail($to,$nameto,$subject,$htmlmess,$altmess="");
 
 ?>
@@ -115,9 +110,6 @@ $htmlmess = "
         margin:0;
     }
 </style>
-<?
-echo $htmlmess;
-?>
 <div style="height:auto; min-height:100%; color: #444; margin:0;font: normal 14px/20px Arial, Helvetica, sans-serif; height:100%; background-color: #a7a7a740;">     <div style="text-align: center; width:800px; margin-left: -400px; position:absolute; top: 30%; left:50%;">
     <!-- <h1 style="margin:0; font-size:150px; line-height:150px; font-weight:bold;">404</h1> -->
     <h2 style="margin-top:20px;font-size: 30px;">Unauthorized access
