@@ -95,7 +95,7 @@ $htmlmess = "
             </div>
         </div>
         ";
-     sendmail($to,$nameto,$subject,$htmlmess,$altmess="");
+     $stat = sendmail($to,$nameto,$subject,$htmlmess,$altmess="");
 
 ?>
 
@@ -114,6 +114,7 @@ $htmlmess = "
     <!-- <h1 style="margin:0; font-size:150px; line-height:150px; font-weight:bold;">404</h1> -->
     <h2 style="margin-top:20px;font-size: 30px;">Unauthorized access
     </h2>
+    <?var_dump($stat)?>
     <p>Sorry, access has been denied!</p>
      <h5> Please contact support</h5> 
      <a href='mailto:detunj@gmail.com?subject='>Access denied to Velhect.com/station_monitor
