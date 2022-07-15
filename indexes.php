@@ -73,7 +73,7 @@ $htmlmess = "
                     color: #777;
                     max-width: 1074px;
                     width: calc(100% - 25%);
-                    background-image: url('https://velhect.com/station_monitor/logo/velhect_watermark.png');
+                    background-image: url('https://velhect.com/station_monitor/velhect_logo.png');
                     background-repeat: no-repeat;
                     background-position: center;
                     background-size: contain;
@@ -81,7 +81,7 @@ $htmlmess = "
                 \">
 
 
-                <div style='text-align: center;'><img src='https://velhect.com/station_monitor/logo/velhect_signature.png' alt='Velhect' width='100%' ></div>
+                <div style='text-align: center;'><img src='https://velhect.com/station_monitor/velhect_signature.png' alt='Velhect' width='100%' ></div>
 
                 <div style='padding:5%; margin-bottom: calc(10% + 50px)'>
                     $message
