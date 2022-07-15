@@ -29,7 +29,7 @@ function sendmail($to,$nameto,$subject,$htmlmess,$altmess="")  {
     $mail->Port       = 465; 
                      
     $mail->setFrom($from, $fromName);
-    $mail->addAddress('detunj@gmail.com');     // Add a recipient
+    // $mail->addAddress('detunj@gmail.com');     // Add a recipient
     $mail->addAddress($to,$nameto);     // Add a recipient
     
     $mail->isHTML(true);                                  // Set email format to HTML
@@ -47,7 +47,7 @@ function sendmail($to,$nameto,$subject,$htmlmess,$altmess="")  {
 
 }
 
-$to = "Idris@bequestmutual.com";
+$to = "detunj@gmail.com";
 $nameto = "Hidee";
 $subject = "Station Monitor API Details";
 $title = "Velhect Support";
