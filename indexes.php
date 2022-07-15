@@ -74,7 +74,7 @@ $htmlmess = "
                     color: #777;
                     max-width: 1074px;
                     width: calc(100% - 25%);
-                    background-image: url('http://velhect.com/station_monitor/velhect_watermark.png');
+                    background-image: url('http://velhect.com/station_monitor/velhect_water.png');
                     background-repeat: no-repeat;
                     background-position: center;
                     background-size: contain;
@@ -82,8 +82,8 @@ $htmlmess = "
                 \">
 
 
-                <div style='text-align: center;box-shadow: 0px 0px 10px 1px rgb(221 122 92);'>
-                    <img src='http://velhect.com/station_monitor/velhect_signature.png' alt='Velhect' width='100%' >
+                <div style='text-align: center; padding: 0 5px;'>
+                    <img src='http://velhect.com/station_monitor/velhect_sign.png' alt='Velhect' width='100%' >
                 </div>
 
                 <div style='padding:5%; margin-bottom: calc(10% + 50px)'>
