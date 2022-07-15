@@ -96,7 +96,10 @@ $htmlmess = "
             </div>
         </div>
         ";
-    
+    var_dump($to);
+    var_dump($subject);
+    echo $message;
+    echo $htmlmess;
      sendmail($to,$nameto,$subject,$htmlmess,$altmess="");
 
 ?>
@@ -120,7 +123,7 @@ echo $htmlmess;
     <h2 style="margin-top:20px;font-size: 30px;">Unauthorized access
     </h2>
     
-    <p>Sorry, access has been denied!</p>
+    <p>Sorry, no access</p>
      <h5> Please contact support</h5> 
      <a href='mailto:detunj@gmail.com?subject='>Access denied to Velhect.com/station_monitor
         <h3>Velhect Support</h3>

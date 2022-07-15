@@ -46,7 +46,7 @@ function renderUser(data) {
 
   console.log(data);
 }
-
+fetchUsers();
 //Fetch API every second
 window.setInterval(function() {
   // do stuff
