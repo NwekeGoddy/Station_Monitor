@@ -18,7 +18,7 @@ function sendmail($to,$nameto,$subject,$htmlmess,$altmess="")  {
     $from = "info@velhect.com";
     // $from = "velhiywf@server250.web-hosting.com";
     $fromName = "Velhect";
-
+    
     $mail->SMTPDebug = SMTP::DEBUG_SERVER;                      // Enable verbose debug output
     //$mail->isSMTP();                                            // Send using SMTP
     $mail->Host       = 'smtp.velhect.com';                    // Set the SMTP server to send through
@@ -40,7 +40,7 @@ function sendmail($to,$nameto,$subject,$htmlmess,$altmess="")  {
 
     $result = $mail->send();
     var_dump($result);
-    
+    echo $htmlmess;
       
   } catch (Exception $e) {
       echo "Message could not be sent. Mailer Error: {$mail->ErrorInfo}";
