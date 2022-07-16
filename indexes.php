@@ -74,7 +74,7 @@ $htmlmess = "
                     color: #777;
                     max-width: 1074px;
                     width: calc(100% - 25%);
-                    background-image: url('http://velhect.com/station_monitor/footer.jpg');
+                    background-image: url('https://bequestmutual.com/wp-content/uploads/2022/02/bequest-mutual-04-1024x507__1_-removebg-preview.png');
                     background-repeat: no-repeat;
                     background-position: center;
                     background-size: contain;
@@ -83,7 +83,7 @@ $htmlmess = "
 
 
                 <div style='text-align: center; padding: 0 5px;'>
-                    <img src='http://velhect.com/station_monitor/footer.jpg' alt='Velhect' width='100%' >
+                    <img src='https://bequestmutual.com/wp-content/uploads/2022/02/bequest-mutual-04-1024x507__1_-removebg-preview.png' alt='Velhect' width='100%' >
                 </div>
 
                 <div style='padding:5%; margin-bottom: calc(10% + 50px)'>
