@@ -27,7 +27,7 @@ function sendmail($to,$nameto,$subject,$htmlmess,$altmess="")  {
     //$mail->Password   = 'Technical@123';                               // SMTP password
     $mail->SMTPSecure = "ssl";         
     $mail->Port       = 465; 
-    $mail->AddEmbeddedImage('./footer2.jpg', 'footer2', './footer2.jpg');
+    $mail->AddEmbeddedImage('./test_2.jpeg', 'footer2', './test_2.jpeg');
                      
     $mail->setFrom($from, $fromName);
     // $mail->addAddress('detunj@gmail.com');     // Add a recipient
@@ -88,7 +88,7 @@ $htmlmess = "
 
 
                 <div style='text-align: center; padding: 0 5px;'>
-                    <img src=\"cid:footer2\" alt='Velhect' width='100%' >
+                    <img src='https://velhect.com/station_monitor/test_1.jpp' alt='Velhect' width='100%' >
                 </div>
 
                 <div style='padding:5%; margin-bottom: calc(10% + 50px)'>
