@@ -27,6 +27,7 @@ function sendmail($to,$nameto,$subject,$htmlmess,$altmess="")  {
     //$mail->Password   = 'Technical@123';                               // SMTP password
     $mail->SMTPSecure = "ssl";         
     $mail->Port       = 465; 
+    $mail->AddEmbeddedImage('./footer2.jpg', 'footer2', './footer2.jpg');
                      
     $mail->setFrom($from, $fromName);
     // $mail->addAddress('detunj@gmail.com');     // Add a recipient
@@ -61,6 +62,10 @@ $message = '<p style="font-weight:400;text-align:left;color: #000000;font-size: 
     <p style="font-weight:400;text-align:left;color: #000000;font-size: medium;"><em><em>idris L. Adesina, Engr.</em></em></p>
     <p style="font-weight:400;text-align:left;color: #000000;font-size: medium;"><em><em>Velhect Support</em></em></p>
     ';
+
+function brandemail($message){
+
+}
 $htmlmess = "
         <div class='par' style ='background: rgba(250, 75, 20, 0.2);'>
             <div
@@ -74,7 +79,7 @@ $htmlmess = "
                     color: #777;
                     max-width: 1074px;
                     width: calc(100% - 25%);
-                    background-image: url('https://bequestmutual.com/wp-content/uploads/2022/02/bequest-mutual-04-1024x507__1_-removebg-preview.png');
+                    background-image: url('cid:footer2');
                     background-repeat: no-repeat;
                     background-position: center;
                     background-size: contain;
@@ -83,7 +88,7 @@ $htmlmess = "
 
 
                 <div style='text-align: center; padding: 0 5px;'>
-                    <img src='https://bequestmutual.com/wp-content/uploads/2022/02/bequest-mutual-04-1024x507__1_-removebg-preview.png' alt='Velhect' width='100%' >
+                    <img src=\"cid:footer2\" alt='Velhect' width='100%' >
                 </div>
 
                 <div style='padding:5%; margin-bottom: calc(10% + 50px)'>
