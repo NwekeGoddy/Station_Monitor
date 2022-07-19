@@ -30,7 +30,7 @@ if(isset($_GET["auth"])){
             'dc' => $dc,
             'down_time' => $dowm
         );
-        $all_data[$sn] = $update_arr;
+        $all_data[$sn][time()] = $update_arr;
             // var_dump($_POST);
             // var_dump($_GET);
             // var_dump($all_data);
@@ -51,8 +51,8 @@ if(isset($_GET["auth"])){
     $key = $_GET["user"];
     
     if($key == $k){
-    
-        echo json_encode($all_data[$sn]);
+        
+        echo json_encode(array_pop($all_data[$sn]));
          
     }
 

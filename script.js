@@ -44,7 +44,7 @@ function renderUser(data) {
     Time_countdown[0].innerHTML = `<span class="green">↓</span>  ${hours} hrs ${minutes} mins`;
   }
 
-  console.log(data);
+  // console.log(data);
 }
 fetchUsers();
 //Fetch API every second
